@@ -215,6 +215,13 @@ If you get this error message, make sure you also specify the `-Scope` or `-Reso
 ```
 PS C:\> Remove-AzRoleAssignment -ObjectId 33333333-3333-3333-3333-333333333333 -RoleDefinitionName "Storage Blob Data Contributor" - Scope /subscriptions/11111111-1111-1111-1111-111111111111
 ```
+**Cause 3**
+
+You've used the service principal client ID rather than the enterprise application object ID to assign the role.
+
+**Solution 2**
+
+Use the enterprise application object ID.
 
 ### Symptom - Cannot delete the last Owner role assignment
 
